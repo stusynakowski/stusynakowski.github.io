@@ -1,18 +1,78 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Research & Data Science</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="p-6 bg-gray-100 shadow-md">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <h1 class="text-3xl font-bold">Your Name</h1>
+      <nav class="mt-2 md:mt-0">
+        <a href="#about" class="mx-2">About</a>
+        <a href="#research" class="mx-2">Research</a>
+        <a href="#publications" class="mx-2">Publications</a>
+        <a href="#cv" class="mx-2">CV</a>
+        <a href="#contact" class="mx-2">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<body>
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-2">About Me</h2>
+    <div class="flex flex-col md:flex-row items-center">
+      <img src="your_photo.jpg" alt="Your Photo" class="w-32 h-32 rounded-full mr-6 mb-4 md:mb-0">
+      <p>
+        I am a researcher and data scientist at XYZ University. My work focuses on machine learning, 
+        causal inference, and applications in health and social sciences. 
+        I develop open-source tools and publish datasets to advance reproducible science.
+      </p>
+    </div>
+  </section>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+  <!-- Research -->
+  <section id="research" class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-2">Research</h2>
+    <ul class="list-disc pl-6">
+      <li><strong>Project A</strong>: Short description <a href="#">[code]</a> <a href="#">[paper]</a></li>
+      <li><strong>Project B</strong>: Short description <a href="#">[dataset]</a></li>
+    </ul>
+  </section>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+  <!-- Publications -->
+  <section id="publications" class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-2">Publications</h2>
+    <ul class="list-disc pl-6">
+      <li>Doe, J. & Smith, A. (2024). Title of Paper. <em>Journal of Data Science</em>. <a href="#">DOI</a></li>
+      <li>Doe, J. (2023). Another Paper. <em>Conference XYZ</em>. <a href="#">PDF</a></li>
+    </ul>
+  </section>
 
+  <!-- CV -->
+  <section id="cv" class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-2">CV</h2>
+    <p>You can download my CV <a href="cv.pdf" class="text-blue-600 underline">here</a>.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-2">Contact</h2>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>
+      <a href="https://github.com/yourusername">GitHub</a> |
+      <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> |
+      <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> |
+      <a href="https://orcid.org/0000-0000-0000-0000">ORCID</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-6 text-center text-gray-500">
+    © 2025 Your Name
+  </footer>
 </body>
 </html>
