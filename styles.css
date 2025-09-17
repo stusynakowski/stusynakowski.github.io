@@ -1,17 +1,49 @@
-* {
-  margin:0px;
-  padding:0px;
+/* Keep custom rules minimal — Tailwind handles most styling */
+
+html, body {
+  height: 100%;
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+img.rounded-full {
+  object-fit: cover;
 }
 
-p {
+/* Selfie specific styles */
+.selfie-figure {
+  width: 85px;
+}
+
+.selfie {
   display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 9999px;
+  border: 3px solid rgba(0,0,0,0.06);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+/* Larger avatar on medium screens */
+@media (min-width: 768px) {
+  .selfie-figure { width: 140px; }
+  .selfie { width: 140px; height: 140px; }
+}
+
+/* Accessible focus style when keyboard navigating */
+.selfie:focus {
+  outline: 3px solid rgba(59,130,246,0.6); /* Tailwind blue-500 at 60% */
+  outline-offset: 3px;
+}
+
+/* Responsive hero image (octocat or avatar) */
+#octocat, .avatar {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+}
+
+/* Small typographic niceties for the content area */
+section p {
+  line-height: 1.5;
 }

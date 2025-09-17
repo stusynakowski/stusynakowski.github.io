@@ -25,9 +25,16 @@
   <section id="about" class="max-w-4xl mx-auto p-6">
     <h2 class="text-2xl font-semibold mb-2">About</h2>
     <div class="flex flex-col md:flex-row items-start">
-      <div class="mr-6 mb-4 md:mb-0">
-        <img src="images/stus_southwest_selfie.jpg" alt="Stuart Synakowski" class="w-32 h-32 rounded-full">
-      </div>
+      <figure class="mr-6 mb-4 md:mb-0 selfie-figure">
+        <img src="images/stus_southwest_selfie.jpg"
+             alt="Portrait of Stuart Synakowski"
+             class="selfie rounded-full"
+             loading="lazy"
+             width="320"
+             height="320"
+             tabindex="0">
+        <figcaption class="sr-only">Stuart Synakowski — portrait</figcaption>
+      </figure>
       <div>
         <p class="mb-3 text-lg">
           <strong>Senior Data Scientist — Computer Vision &amp; Generative AI</strong>
@@ -42,9 +49,9 @@
     </div>
   </section>
 
-  <!-- Selected Work -->
+  <!-- Some work for Corporate R&D -->
   <section id="Some work for Corporate R&D" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">Selected Work (anonymized)</h2>
+    <h2 class="text-2xl font-semibold mb-2">Some work for Corporate R&D</h2>
     <ol class="list-decimal pl-6 space-y-3">
       <li>
         <strong>No-code Text-Mining Workflow Builder (2024–2025)</strong>
@@ -75,7 +82,7 @@
         <div>Rapid prototype using on-device sensors for sizing/fit research in infant/baby applications.</div>
       </li>
       <li>
-        <strong>Micro-Action Analysis for Grooming Videos (2023)</strong>
+        <strong>Computer Vision Systems to Study Micro-Actions of People Shaving  (2023)</strong>
         <div>CV pipeline to quantify fine motor actions and sequences in shaving videos for consumer-use research.</div>
       </li>
     </ol>
