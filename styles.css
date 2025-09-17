@@ -10,13 +10,13 @@ img.rounded-full {
 
 /* Selfie specific styles */
 .selfie-figure {
-  width: 85px;
+  width: 200px;
 }
 
 .selfie {
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 9999px;
   border: 3px solid rgba(0,0,0,0.06);
