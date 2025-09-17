@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Research & Data Science</title>
+  <title>Stuart Synakowski | Senior Data Scientist</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-white text-gray-800 font-sans">
   <!-- Header -->
   <header class="p-6 bg-gray-100 shadow-md">
     <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center">
-      <h1 class="text-3xl font-bold">Your Name</h1>
+  <h1 class="text-3xl font-bold">Stuart Synakowski</h1>
       <nav class="mt-2 md:mt-0">
         <a href="#about" class="mx-2">About</a>
         <a href="#research" class="mx-2">Research</a>
@@ -23,56 +23,109 @@
 
   <!-- About -->
   <section id="about" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">About Me</h2>
-    <div class="flex flex-col md:flex-row items-center">
-      <img src="your_photo.jpg" alt="Your Photo" class="w-32 h-32 rounded-full mr-6 mb-4 md:mb-0">
-      <p>
-        I am a researcher and data scientist at XYZ University. My work focuses on machine learning, 
-        causal inference, and applications in health and social sciences. 
-        I develop open-source tools and publish datasets to advance reproducible science.
-      </p>
+    <h2 class="text-2xl font-semibold mb-2">About</h2>
+    <div class="flex flex-col md:flex-row items-start">
+      <div class="mr-6 mb-4 md:mb-0">
+        <img src="images/create-octocat.png" alt="Stuart Synakowski" class="w-32 h-32 rounded-full">
+      </div>
+      <div>
+        <p class="mb-3 text-lg">
+          <strong>Senior Data Scientist — Computer Vision &amp; Generative AI</strong>
+        </p>
+        <p class="mb-3">
+          I build ML systems and tools that turn messy visual &amp; text data into reliable decisions. Hands-on, first-principles thinker who ships working prototypes, mentors researchers, and partners with cross-functional teams to create business impact.
+        </p>
+        <p class="mb-2"><strong>Currently:</strong> R&amp;D platforms work at a Fortune 50 CPG company (skin/health, consumer research).</p>
+        <p class="mb-2"><strong>Looking for:</strong> Applied ML / Computer Vision / GenAI platform roles on high-caliber teams (Austin, hybrid), starting Spring 2026.</p>
+        <p><strong>Values:</strong> real-world impact, rigor, good people, and products that help users.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Research -->
-  <section id="research" class="max-w-4xl mx-auto p-6">
+  <!-- Selected Work -->
+  <section id="selected-work" class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-2">Selected Work (anonymized)</h2>
+    <ol class="list-decimal pl-6 space-y-3">
+      <li>
+        <strong>No-code Text-Mining Workflow Builder (2024–2025)</strong>
+        <div>Designed a drag-and-drop system for domain experts to compose custom text-processing pipelines (beyond basic RAG). Enabled non-technical researchers to search, structure, and synthesize large clinical/technical corpora with reproducible workflows.</div>
+      </li>
+      <li>
+        <strong>Insight Co-Pilot for Large-Scale Text Analytics (2024–2025)</strong>
+        <div>Fused classical data analysis with LLMs to generate and validate insights at scale, standardizing analyses and improving traceability.</div>
+      </li>
+      <li>
+        <strong>Synthetic Skin Imagery for Perception Studies (2023)</strong>
+        <div>Built a controllable generator to produce parameterized exemplars of skin appearance for user research and model training.</div>
+      </li>
+      <li>
+        <strong>Perceptual Severity Index for Dermatology (2023)</strong>
+        <div>Co-developed a consistent, condition-agnostic metric for perceived severity in skin imagery to improve agreement with expert ratings.</div>
+      </li>
+      <li>
+        <strong>At-Home Imaging &amp; Calibration Framework (2023)</strong>
+        <div>Mobile capture protocols, calibration, and ROI tracking for consistent, analysis-grade images outside the lab.</div>
+      </li>
+      <li>
+        <strong>Image-Based Treatment-Response Feasibility (2023)</strong>
+        <div>Explored predictive modeling of response to topicals using facial imagery with strict guardrails and bias checks.</div>
+      </li>
+      <li>
+        <strong>iPhone Pro LiDAR Body-Measurement Prototype (2023)</strong>
+        <div>Rapid prototype using on-device sensors for sizing/fit research in infant/baby applications.</div>
+      </li>
+      <li>
+        <strong>Micro-Action Analysis for Grooming Videos (2023)</strong>
+        <div>CV pipeline to quantify fine motor actions and sequences in shaving videos for consumer-use research.</div>
+      </li>
+    </ol>
+    <p class="mt-3 text-sm">Note: Program names, internal tooling labels, and brand/product identities have been intentionally generalized. Deeper technical specifics are available under NDA or in private conversation.</p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-2">Experience</h2>
+    <ul class="list-disc pl-6">
+      <li><strong>Senior Data Scientist — R&amp;D Platforms (2024–Present)</strong>, Fortune 50 CPG (Skin/Health &amp; Consumer Research). Lead development of internal GenAI &amp; analytics platforms; mentor researchers; define evaluation protocols and reproducible workflows.</li>
+      <li><strong>Data Scientist — Data &amp; Modeling Sciences (2022–2024)</strong>, Fortune 50 CPG (R&amp;D). Built CV systems for image quality, perception analysis, and behavioral quantification; delivered end-to-end pipelines and stakeholder reporting.</li>
+      <li><strong>Graduate Researcher — ECE (2017–2021)</strong>, The Ohio State University (Computational Biology &amp; Cognitive Science). Research in computer vision &amp; machine learning; teaching assistant.</li>
+    </ul>
+  </section>
+
+  <!-- Research & Publications -->
+  <section id="research-publications" class="max-w-4xl mx-auto p-6">
     <h2 class="text-2xl font-semibold mb-2">Research</h2>
-    <ul class="list-disc pl-6">
-      <li><strong>Project A</strong>: Short description <a href="#">[code]</a> <a href="#">[paper]</a></li>
-      <li><strong>Project B</strong>: Short description <a href="#">[dataset]</a></li>
-    </ul>
+    <p class="mb-3">Topology of Deep Nets — Proposed a topological characterization of DNN structure; preprint available upon request.</p>
+    <p class="mb-3">Interpreting Intent in Motion — Unsupervised detection of non-intentional vs intentional movement. Published in International Journal of Computer Vision; code released.</p>
+    <h3 class="text-xl font-semibold mt-4">Selected Skills</h3>
+    <p class="mb-2">Computer Vision: multi-view geometry, SfM, registration, photogrammetry, inverse rendering, segmentation, action recognition</p>
+    <p class="mb-2">GenAI / LLMs: fine-tuning, RAG, agents/tools, LangChain-style orchestration, evaluation &amp; guardrails</p>
+    <p class="mb-2">Deep Learning: CNNs, transformers, training &amp; optimization, regularization, augmentation</p>
+    <p class="mb-2">Tooling: Python, PyTorch, Docker, Git, Linux, Databricks, Azure, Streamlit</p>
   </section>
 
-  <!-- Publications -->
-  <section id="publications" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">Publications</h2>
-    <ul class="list-disc pl-6">
-      <li>Doe, J. & Smith, A. (2024). Title of Paper. <em>Journal of Data Science</em>. <a href="#">DOI</a></li>
-      <li>Doe, J. (2023). Another Paper. <em>Conference XYZ</em>. <a href="#">PDF</a></li>
-    </ul>
-  </section>
+  <!-- Education, How I Work, Interests, Contact -->
+  <section id="more" class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-2">Education</h2>
+    <p class="mb-3">Ph.D., Electrical &amp; Computer Engineering — The Ohio State University. Focus: Computer Vision, Machine Learning, Mathematical Modeling.</p>
+    <p class="mb-3">B.S., Physics &amp; B.S., Applied Mathematics &amp; Statistics — Clarkson University. Minor in Computer Science; Presidential Scholar.</p>
 
-  <!-- CV -->
-  <section id="cv" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">CV</h2>
-    <p>You can download my CV <a href="cv.pdf" class="text-blue-600 underline">here</a>.</p>
-  </section>
+    <h2 class="text-2xl font-semibold mb-2 mt-6">How I Work</h2>
+    <p class="mb-3">Start from first principles; measure what matters; ship iteratively. Prefer small, well-crafted tools that compound over time. Care about reliability, evaluation, and making results explainable to non-ML stakeholders.</p>
 
-  <!-- Contact -->
-  <section id="contact" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">Contact</h2>
-    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-    <p>
-      <a href="https://github.com/yourusername">GitHub</a> |
-      <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> |
-      <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> |
-      <a href="https://orcid.org/0000-0000-0000-0000">ORCID</a>
-    </p>
+    <h2 class="text-2xl font-semibold mb-2 mt-6">Interests</h2>
+    <p class="mb-3">Jazz drumming, Brazilian Jiu-Jitsu, snowboarding, hiking, building computers, racing drones.</p>
+
+    <h2 class="text-2xl font-semibold mb-2 mt-6" id="contact">Contact &amp; Availability</h2>
+    <p class="mb-2">Email: <a href="mailto:stuart.synakowski@gmail.com">stuart.synakowski@gmail.com</a></p>
+    <p class="mb-2">GitHub: <a href="https://github.com/stusynakowski">github.com/stusynakowski</a></p>
+    <p class="mb-2">LinkedIn: <a href="https://linkedin.com/in/stuart-synakowski">linkedin.com/in/stuart-synakowski</a></p>
+    <p class="text-sm mt-3">Availability: Looking for roles starting Spring 2026 (Austin, hybrid); open to conversations and technical deep-dives.</p>
   </section>
 
   <!-- Footer -->
   <footer class="p-6 text-center text-gray-500">
-    © 2025 Your Name
+    © 2025 Stuart Synakowski
   </footer>
 </body>
 </html>
