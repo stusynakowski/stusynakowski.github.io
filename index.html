@@ -9,12 +9,18 @@
 <body class="bg-white text-gray-800 font-sans">
   <!-- Header -->
   <header class="p-6 bg-gray-100 shadow-md">
-    <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center">
-  <h1 class="text-3xl font-bold">Stuart Synakowski</h1>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <h1 class="text-3xl font-bold">Stuart Synakowski</h1>
       <nav class="mt-2 md:mt-0">
         <a href="#about" class="mx-2">About</a>
-        <a href="#projects" class="mx-2">Research</a>
-        <a href="#research" class="mx-2">Projects</a>
+        <!-- Projects Dropdown -->
+        <div class="relative inline-block group">
+          <span class="mx-2 cursor-pointer">Projects ▾</span>
+          <div class="absolute hidden group-hover:block bg-white text-gray-800 shadow-lg rounded mt-0 w-56 z-50 border border-gray-200">
+            <a href="#corporate-projects" class="block px-4 py-2 hover:bg-gray-100">Corporate R&D</a>
+            <a href="#research-projects" class="block px-4 py-2 hover:bg-gray-100">Graduate Research</a>
+          </div>
+        </div>
         <a href="#resume" class="mx-2">Resume</a>
         <a href="#contact" class="mx-2">Contact</a>
         <a href="#random" class="mx-2">Random</a>
@@ -22,11 +28,12 @@
     </div>
   </header>
 
-  <!-- About -->
-  <section id="about" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">About</h2>
-    <div class="flex flex-col md:flex-row items-start">
-      <figure class="mr-6 mb-4 lg:mb-0 selfie-figure">
+  <div class="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-12">
+    
+    <!-- Left Sidebar -->
+    <aside class="lg:col-span-1 space-y-8">
+      <!-- Profile Image -->
+      <figure class="selfie-figure mx-auto lg:mx-0">
         <img src="images/stus_southwest_selfie.jpg"
              alt="Portrait of Stuart Synakowski"
              class="selfie rounded-full"
@@ -34,166 +41,192 @@
              width="480"
              height="480"
              tabindex="0">
-        <figcaption class="sr-only">Stuart Synakowski — portrait</figcaption>
       </figure>
-      <div>
-        <p class="mb-3 text-lg">
-          <strong>AI Applied-Scientist/Engineer    <br> Computer Vision, Machine Learning, GenAI  </strong>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2 class="text-xl font-bold mb-3 border-b pb-1">Contact</h2>
+        <p class="mb-2">Email: <a href="mailto:stuart.synakowski@gmail.com" class="text-blue-600 hover:underline">stuart.synakowski@gmail.com</a></p>
+        <p class="mb-2">GitHub: <a href="https://github.com/stusynakowski" class="text-blue-600 hover:underline">github.com/stusynakowski</a></p>
+        <p class="mb-2">LinkedIn: <a href="https://linkedin.com/in/stuart-synakowski" class="text-blue-600 hover:underline">linkedin.com/in/stuart-synakowski</a></p>
+        <p class="text-sm mt-3 text-gray-600">Availability: open to conversations and technical deep-dives.</p>
+      </section>
+
+      <!-- Education -->
+      <section>
+        <h2 class="text-xl font-bold mb-3 border-b pb-1">Education</h2>
+        <div class="mb-4">
+          <p class="font-semibold">Ph.D., Electrical &amp; Computer Engineering</p>
+          <p class="text-sm text-gray-600">The Ohio State University</p>
+          <p class="text-sm mt-1">Focus: Computer Vision, Machine Learning, Mathematical Modeling.</p>
+        </div>
+        <div>
+          <p class="font-semibold">B.S., Physics &amp; Applied Math</p>
+          <p class="text-sm text-gray-600">Clarkson University</p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section>
+        <h2 class="text-xl font-bold mb-3 border-b pb-1">Skills</h2>
+        <div class="mb-3">
+          <h3 class="font-semibold text-sm">Computer Vision</h3>
+          <p class="text-sm text-gray-600">Multi-view geometry, SfM, registration, photogrammetry, inverse rendering, segmentation, action recognition</p>
+        </div>
+        <div class="mb-3">
+          <h3 class="font-semibold text-sm">GenAI / LLMs</h3>
+          <p class="text-sm text-gray-600">Fine-tuning, RAG, agents/tools, LangChain-style orchestration, evaluation &amp; guardrails</p>
+        </div>
+        <div class="mb-3">
+          <h3 class="font-semibold text-sm">Deep Learning</h3>
+          <p class="text-sm text-gray-600">CNNs, transformers, training &amp; optimization, regularization, augmentation</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-sm">Tooling</h3>
+          <p class="text-sm text-gray-600">Python, PyTorch, Docker, Git, Linux, Databricks, Azure, Streamlit</p>
+        </div>
+      </section>
+
+      <!-- Interests -->
+      <section>
+        <h2 class="text-xl font-bold mb-3 border-b pb-1">Interests</h2>
+        <p class="text-sm">Jazz drumming, Brazilian Jiu-Jitsu, snowboarding, hiking, building computers, racing drones.</p>
+      </section>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="lg:col-span-2 space-y-12">
+      
+      <!-- About -->
+      <section id="about">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="mb-3 text-lg font-medium">
+          Applied-Scientist <br> Computer Vision, Machine Learning, GenAI Orchestrations
         </p>
         <p class="mb-3">
-          I mainly build cool AI tools. I am a hands-on, first-principles thinker who ships working prototypes. I love collaborating with smart, hardworking people. I enjoy seeing my projects bring value to people, and writing short python scripts that outperform deep learning models.
+          I build AI tools. I am a first-principles thinker who ships working prototypes. I love collaborating with smart, hardworking people. I enjoy seeing my projects bring value to people. I also like writing short python scripts that outperform deep learning models.
         </p>
-        <p class="mb-2"><strong>Currently:</strong> Corporate R&amp;D at Procter and Gamble (skin/health, consumer research, and sustainability).</p>
-        <p class="mb-2"><strong>What I generally work on:</strong> Applied ML / Computer Vision / GenAI Platforms</p>
-        <p><strong>Values:</strong> integrity, curiosity, humility, initiative, sincere attempts at excellence, humor</p>
-      </div>
-    </div>
-  </section>
-
-
-    <!-- Experience -->
-  <section id="experience" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">Experience</h2>
-    <ul class="list-disc pl-6">
-      <li><strong>Senior Data Scientist — R&amp;D Platforms (2024–Present)</strong>,  Procter and Gamble (Skin/Health &amp; Consumer Research). Lead development GenAI applications to assist our internal research  ; Custom ML/CV tools to further our understanding of skin.</li>
-      <li><strong>Data Scientist — Data &amp; Modeling Sciences (2022–2024)</strong>, Procter and Gamble (R&amp;D). Built CV systems for skin image quality, perception analysis, and behavioral quantification; delivered end-to-end from idea to deployment.</li>
-      <li><strong>Graduate Researcher — ECE (2017–2021)</strong>, The Ohio State University (Computational Biology &amp; Cognitive Science). Research in computer vision &amp; machine learning; teaching assistant.</li>
-    </ul>
-  </section>
-
-  
-  <!-- Some work for Corporate R&D -->
-  <section id="Some work for Corporate R&D" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">Some Cool Corporate R&D Projects </h2>
-    <h3 id="coperate-work-subheading" class="text-xl mt-4 mb-2">(Cant share too many details as I dont Own the Work I did)</h3>
-    <h3 class="text-xl font-semibold mt-4">Custom GenAI Tools</h3>
-    <ol class="list-decimal pl-6 space-y-3">
-      <li>
-        <strong>Tools to Democratize Text-Mining (2024–2025)</strong>
-        <div>Designed an excel-like system for domain experts to compose custom text-processing pipelines (beyond RAG). Enabled non-technical researchers to search, structure, and synthesize large clinical/technical corpora with reproducible workflows.
-          <a href="corporate_RandD/GenAI_tools.html" class="text-blue-600 hover:underline">Read more (placeholder will add content soon)→</a> 
-
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 my-4">
+          <p class="mb-2"><strong>Currently:</strong> Corporate R&amp;D at Procter and Gamble </p>
+          <p class="mb-2"><strong>Focus:</strong> Applied ML / Computer Vision / GenAI Platforms and Tools</p>
+          <p><strong>Values:</strong> integrity, curiosity, humility, initiative, sincere attempts at excellence, humor</p>
         </div>
-      </li>
-      <li>
-        <strong>Insight Co-Pilot for Large-Scale Text Analytics (2024–2025)</strong>
-        <div>Fused classical data analysis with LLMs to generate and validate insights at scale, standardizing analyses and improving traceability, speed and performance.
-          <a href="corporate_RandD/GenAI_tools.html" class="text-blue-600 hover:underline">Read more (placeholder will add content soon)→</a> 
+        
+        <h3 class="text-xl font-semibold mt-6 mb-2">How I Work</h3>
+        <p>Start from first principles; measure what matters; ship iteratively. Prefer small, well-crafted tools that compound over time. Care about reliability, evaluation, and making results explainable to non-ML stakeholders.</p>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+        <h2 class="text-2xl font-bold mb-4 border-b pb-2">Work Experience</h2>
+        <ul class="space-y-6">
+          <li>
+            <div class="font-bold text-lg">Senior Data Scientist</div>
+            <div class="text-gray-600 mb-1">Procter &amp; Gamble R&amp;D - Discovery and Innovation Platforms (2024–Present)</div>
+            <p>Building Custom GenAI Platforms and Tools for Clinical Research/Consumer Research/Internal Knowledge Activation. I am also building Custom ML/CV tools to further our understanding of skin.</p>
+          </li>
+          <li>
+            <div class="font-bold text-lg">Data Scientist</div>
+            <div class="text-gray-600 mb-1">Procter &amp; Gamble R&amp;D Data &amp; Modeling Sciences (2022–2024)</div>
+            <p>Built CV systems for skin image quality, perception analysis, and behavioral quantification; delivered end-to-end from idea to deployment.</p>
+          </li>
+          <li>
+            <div class="font-bold text-lg">Graduate Researcher</div>
+            <div class="text-gray-600 mb-1">The Ohio State University - Electrical and Computer Engineering (2017–2021)</div>
+            <p>Conducted Research in computer vision &amp; machine learning; also worked as a teaching assistant.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Corporate Projects -->
+      <section id="corporate-projects">
+        <h2 class="text-2xl font-bold mb-4 border-b pb-2">Corporate R&amp;D Projects</h2>
+        <p class="italic text-gray-500 mb-6">(Can't share too many details as I don't own the work, can only share the general concepts)</p>
+        
+        <h3 class="text-xl font-semibold mt-4 mb-3">Custom GenAI Tools</h3>
+        <div class="space-y-4 pl-4 border-l-2 border-gray-200">
+          <div>
+            <strong>Tools to Democratize Text-Mining (2024–2025)</strong>
+            <p class="mt-1">Designed an excel-like system for domain experts to compose custom text-processing pipelines (beyond RAG). Enabled non-technical researchers to search, structure, and synthesize large clinical/technical corpora with reproducible workflows.
+              <a href="corporate_RandD/GenAI_tools.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a>
+            </p>
+          </div>
+          <div>
+            <strong>Insight Co-Pilot for Large-Scale Text Analytics (2024–2025)</strong>
+            <p class="mt-1">Fused classical data analysis with LLMs to generate and validate insights at scale, standardizing analyses and improving traceability, speed and performance.
+              <a href="corporate_RandD/GenAI_tools.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a>
+            </p>
+          </div>
         </div>
-      </li>
-    </ol>
 
-    <h3 class="text-xl font-semibold mt-4">CV / ML for Cosmetic Dermatology</h3>
-    <ol class="list-decimal pl-6 space-y-3">
-      <li>
-        <strong>Synthetic Skin Imagery for Perception Studies (2023)</strong>
-        <div>Built a controllable generator to produce parameterized exemplars of skin appearance for user research and model training. 
-            <a href="corporate_RandD/AI_for_skin.html" class="text-blue-600 hover:underline">Read more (placeholder will add content soon)→</a> 
+        <h3 class="text-xl font-semibold mt-8 mb-3">CV / ML for Cosmetic Dermatology</h3>
+        <div class="space-y-4 pl-4 border-l-2 border-gray-200">
+          <div>
+            <strong>Synthetic Skin Imagery for Perception Studies (2023)</strong>
+            <p class="mt-1">Built a controllable generator to produce parameterized exemplars of skin appearance for user research and model training. 
+                <a href="corporate_RandD/AI_for_skin.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a> 
+            </p>
+          </div>
+          <div>
+            <strong>Perceptual Severity Index for Dermatology (2023)</strong>
+            <p class="mt-1">Co-developed a consistent, condition-agnostic metric for perceived severity in skin imagery to improve agreement with expert ratings.</p>
+          </div>
+          <div>
+            <strong>At-Home Imaging &amp; Calibration Framework (2023)</strong>
+            <p class="mt-1">Mobile capture protocols, calibration, and ROI tracking for consistent, analysis-grade images outside the lab.</p>
+          </div>
+          <div>
+            <strong>Image-Based Treatment-Response Feasibility (2023)</strong>
+            <p class="mt-1">Explored predictive modeling of response to topicals using facial imagery with strict guardrails and bias checks.</p>
+          </div>
         </div>
-      </li>
-      <li>
-        <strong>Perceptual Severity Index for Dermatology (2023)</strong>
-        <div>Co-developed a consistent, condition-agnostic metric for perceived severity in skin imagery to improve agreement with expert ratings.</div>
-      </li>
-      <li>
-        <strong>At-Home Imaging &amp; Calibration Framework (2023)</strong>
-        <div>Mobile capture protocols, calibration, and ROI tracking for consistent, analysis-grade images outside the lab.</div>
-      </li>
-      <li>
-        <strong>Image-Based Treatment-Response Feasibility (2023)</strong>
-        <div>Explored predictive modeling of response to topicals using facial imagery with strict guardrails and bias checks.</div>
-      </li>
-    </ol>
 
-    <h3 class="text-xl font-semibold mt-4">Computer Vision Systems for Consumer/Product Research</h3>
-    <ol class="list-decimal pl-6 space-y-3">
-      <li>
-        <strong>iPhone Pro LiDAR Body-Measurement Prototype (2023)</strong>
-        <div>Rapid prototype using on-device sensors for sizing/fit research in infant/baby applications.</div>
-      </li>
-      <li>
-        <strong>Computer Vision Systems to Study Micro-Actions of Consumers (2023)</strong>
-        <div>CV pipeline to quantify fine motor actions and sequences in shaving videos for consumer-use research.</div>
-      </li>
-    </ol>
+        <h3 class="text-xl font-semibold mt-8 mb-3">Computer Vision Systems for Consumer/Product Research</h3>
+        <div class="space-y-4 pl-4 border-l-2 border-gray-200">
+          <div>
+            <strong>iPhone Pro LiDAR Body-Measurement Prototype (2023)</strong>
+            <p class="mt-1">Rapid prototype using on-device sensors for sizing/fit research in infant/baby applications.</p>
+          </div>
+          <div>
+            <strong>Computer Vision Systems to Study Micro-Actions of Consumers (2023)</strong>
+            <p class="mt-1">CV pipeline to quantify fine motor actions and sequences in shaving videos for consumer-use research.</p>
+          </div>
+        </div>
+      </section>
 
-    <p class="mt-3 text-sm">Note: Program names, internal tooling labels, and brand/product identities have been intentionally generalized. Deeper technical specifics are available under NDA or in private conversation.</p>
-  </section>
+      <!-- Research Projects -->
+      <section id="research-projects">
+        <h2 class="text-2xl font-bold mb-4 border-b pb-2">Graduate Research</h2>
+        <div class="space-y-4">
+          <div>
+            <strong>Topology of Deep Nets</strong>
+            <p class="mt-1">Proposed a topological characterization of DNN structure; preprint available upon request. <a href="AIresearch/topology_of_deep_networks.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a></p>
+          </div>
+          <div>
+            <strong>Interpreting Intent in Motion</strong>
+            <p class="mt-1">Unsupervised detection of non-intentional vs intentional movement. Published in International Journal of Computer Vision. <a href="AIresearch/intent_ijcv_work.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a></p>
+          </div>
+        </div>
+      </section>
 
+      <!-- Random -->
+      <section id="random">
+        <h2 class="text-2xl font-bold mb-4 border-b pb-2">Random Notes</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><a href="random/general_work_lessons.html" class="text-blue-600 hover:underline">General lessons from work</a></li>
+          <li><a href="random/how_large_corporations_can_implode.html" class="text-blue-600 hover:underline">The problem with PowerPoint factories</a></li>
+          <li><a href="random/how_to_thrive_in_tech_with_adhd.html" class="text-blue-600 hover:underline">Working in tech with ADHD</a></li>
+          <li><a href="random/short_term_genAI_work_with_clear_value.html" class="text-blue-600 hover:underline">Short assessment of GenAI</a></li>
+          <li><a href="random/thoughts_on_AI_longterm.html" class="text-blue-600 hover:underline">Longterm assessments of the future</a></li>
+          <li><a href="research/thesis.html" class="text-blue-600 hover:underline">PhD Defense / Thesis</a></li>
+        </ul>
+      </section>
 
-
-  <!-- Research & Publications -->
-  <section id="AI Research " class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">Graduate Research Projects</h2>
-    <p class="mb-3">Topology of Deep Nets — Proposed a topological characterization of DNN structure; preprint available upon request. <a href="AIresearch/topology_of_deep_networks.html" class="text-blue-600 hover:underline">Read more (Placeholder not Done) →</a></p>
-    <p class="mb-3">Interpreting Intent in Motion — Unsupervised detection of non-intentional vs intentional movement. Published in International Journal of Computer Vision;<a href="AIresearch/intent_ijcv_work.html" class="text-blue-600 hover:underline">Read more (placeholder will add content soon)→</a> 
-</p>
-    
-    
-    
-    
-    <h3 class="text-xl font-semibold mt-4">Selected Skills</h3>
-    <p class="mb-2">Computer Vision: multi-view geometry, SfM, registration, photogrammetry, inverse rendering, segmentation, action recognition</p>
-    <p class="mb-2">GenAI / LLMs: fine-tuning, RAG, agents/tools, LangChain-style orchestration, evaluation &amp; guardrails</p>
-    <p class="mb-2">Deep Learning: CNNs, transformers, training &amp; optimization, regularization, augmentation</p>
-    <p class="mb-2">Tooling: Python, PyTorch, Docker, Git, Linux, Databricks, Azure, Streamlit</p>
-  </section>
-
-
-
-
-  <!-- Education, How I Work, Interests, Contact -->
-  <section id="more" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">Education</h2>
-    <p class="mb-3">Ph.D., Electrical &amp; Computer Engineering — The Ohio State University. Focus: Computer Vision, Machine Learning, Mathematical Modeling.</p>
-    <p class="mb-3">Interpreting Intent in Motion — Unsupervised detection of non-intentional vs intentional movement. Published in International Journal of Computer Vision; code released. <a href="research/thesis.html" class="text-blue-600 hover:underline">PhD defense / dissertation</a></p>
-    <p class="mb-3">B.S., Physics &amp; B.S., Applied Mathematics &amp; Statistics — Clarkson University. Minor in Computer Science; Presidential Scholar.</p>
-
-    <h2 class="text-2xl font-semibold mb-2 mt-6">How I Work</h2>
-    <p class="mb-3">Start from first principles; measure what matters; ship iteratively. Prefer small, well-crafted tools that compound over time. Care about reliability, evaluation, and making results explainable to non-ML stakeholders.</p>
-
-    <h2 class="text-2xl font-semibold mb-2 mt-6">Interests</h2>
-    <p class="mb-3">Jazz drumming, Brazilian Jiu-Jitsu, snowboarding, hiking, building computers, racing drones.</p>
-
-
-
-
-
-    <h2 class="text-2xl font-semibold mb-2 mt-6" id="contact">Contact &amp; Availability</h2>
-    <p class="mb-2">Email: <a href="mailto:stuart.synakowski@gmail.com">stuart.synakowski@gmail.com</a></p>
-    <p class="mb-2">GitHub: <a href="https://github.com/stusynakowski">github.com/stusynakowski</a></p>
-    <p class="mb-2">LinkedIn: <a href="https://linkedin.com/in/stuart-synakowski">linkedin.com/in/stuart-synakowski</a></p>
-    <p class="text-sm mt-3">Availability: open to conversations and technical deep-dives.</p>
-  </section>
-
-
-  <section id="random" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">Random</h2>
-    <p class="mb-3">A few misc pages and notes.</p>
-    <ul class="list-disc pl-6 space-y-2">
-      <li><a href="random/general_work_lessons.html" class="text-blue-600 hover:underline">Notes</a> — general lessons from work (placeholder) </li>
-      <li><a href="random/how_large_corporations_can_implode.html" class="text-blue-600 hover:underline">Notes</a> — the problem with  powerpoint factories (placeholder)</li>
-      <li><a href="random/how_to_thrive_in_tech_with_adhd.html" class="text-blue-600 hover:underline">Notes</a> — working in tech with adhd (placeholder)</li>
-      <li><a href="random/short_term_genAI_work_with_clear_value.html" class="text-blue-600 hover:underline">Notes</a>  my short assessment of genAI (placeholder) </li>
-      <li><a href="random/thoughts_on_AI_longterm.html" class="text-blue-600 hover:underline">Notes</a>  my longterm assessments of the future (placeholder) </p></li>
-      <li><a href="research/thesis.html" class="text-blue-600 hover:underline">PhD / Thesis</a> — defense slides and links.</li>
-    </ul>
-  </section>
-
-
-  <section id="Contact" class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2 mt-6" id="contact">Contact &amp; Availability</h2>
-    <p class="mb-2">Email: <a href="mailto:stuart.synakowski@gmail.com">stuart.synakowski@gmail.com</a></p>
-    <p class="mb-2">GitHub: <a href="https://github.com/stusynakowski">github.com/stusynakowski</a></p>
-    <p class="mb-2">LinkedIn: <a href="https://linkedin.com/in/stuart-synakowski">linkedin.com/in/stuart-synakowski</a></p>
-    <p class="text-sm mt-3">Availability: open to conversations and technical deep-dives.</p>
-  </section>
-
-
-   <footer class="p-6 text-center text-gray-500">
+    </main>
+  </div>
 
   <!-- Footer -->
-  <footer class="p-6 text-center text-gray-500">
+  <footer class="p-6 text-center text-gray-500 border-t mt-12">
     © 2025 Stuart Synakowski
   </footer>
 </body>
