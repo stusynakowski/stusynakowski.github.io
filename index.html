@@ -13,14 +13,7 @@
       <h1 class="text-3xl font-bold">Stuart Synakowski</h1>
       <nav class="mt-2 md:mt-0">
         <a href="#about" class="mx-2">About</a>
-        <!-- Projects Dropdown -->
-        <div class="relative inline-block group">
-          <span class="mx-2 cursor-pointer">Projects ▾</span>
-          <div class="absolute hidden group-hover:block bg-white text-gray-800 shadow-lg rounded mt-0 w-56 z-50 border border-gray-200">
-            <a href="#corporate-projects" class="block px-4 py-2 hover:bg-gray-100">Corporate R&D</a>
-            <a href="#research-projects" class="block px-4 py-2 hover:bg-gray-100">Graduate Research</a>
-          </div>
-        </div>
+        <a href="#Projects" class="mx-2">Projects</a>
         <a href="#resume" class="mx-2">Resume</a>
         <a href="#contact" class="mx-2">Contact</a>
         <a href="#random" class="mx-2">Random</a>
@@ -99,12 +92,12 @@
       
       <!-- About -->
       <section id="about">
-        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <h2 class="text-3xl font-bold mb-4">About Me:</h2>
         <p class="mb-3 text-lg font-medium">
-          Applied-Scientist <br> Computer Vision, Machine Learning, GenAI Orchestrations
+          I'm an applied-scientist focusing on computer vision, machine learning, and GenAI orchestrations. In other words... I build AI tools.
         </p>
         <p class="mb-3">
-          I build AI tools. I am a first-principles thinker who ships working prototypes. I love collaborating with smart, hardworking people. I enjoy seeing my projects bring value to people. I also like writing short python scripts that outperform deep learning models.
+           I am a first-principles thinker who ships working prototypes. I love collaborating with smart, hardworking people. I enjoy seeing my projects bring value to people. I also like writing short python scripts that outperform deep learning models.
         </p>
         <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 my-4">
           <p class="mb-2"><strong>Currently:</strong> Corporate R&amp;D at Procter and Gamble </p>
@@ -121,90 +114,115 @@
         <h2 class="text-2xl font-bold mb-4 border-b pb-2">Work Experience</h2>
         <ul class="space-y-6">
           <li>
+            <li class="flex items-start space-x-4">
+            <img src="images/procter_and_gamble_logo.png" alt="Ohio State University Logo" class="w-16 h-auto object-contain mt-1">
+            <div>
             <div class="font-bold text-lg">Senior Data Scientist</div>
             <div class="text-gray-600 mb-1">Procter &amp; Gamble R&amp;D - Discovery and Innovation Platforms (2024–Present)</div>
             <p>Building Custom GenAI Platforms and Tools for Clinical Research/Consumer Research/Internal Knowledge Activation. I am also building Custom ML/CV tools to further our understanding of skin.</p>
-          </li>
-          <li>
+          <!--/li-->
+          <!--li -->
             <div class="font-bold text-lg">Data Scientist</div>
             <div class="text-gray-600 mb-1">Procter &amp; Gamble R&amp;D Data &amp; Modeling Sciences (2022–2024)</div>
             <p>Built CV systems for skin image quality, perception analysis, and behavioral quantification; delivered end-to-end from idea to deployment.</p>
           </li>
-          <li>
-            <div class="font-bold text-lg">Graduate Researcher</div>
-            <div class="text-gray-600 mb-1">The Ohio State University - Electrical and Computer Engineering (2017–2021)</div>
-            <p>Conducted Research in computer vision &amp; machine learning; also worked as a teaching assistant.</p>
+          <li class="flex items-start space-x-4">
+            <img src="images/ohio_state_logo.png" alt="Ohio State University Logo" class="w-16 h-auto object-contain mt-1">
+            <div>
+              <div class="font-bold text-lg">Graduate Researcher</div>
+              <div class="text-gray-600 mb-1">The Ohio State University - Electrical and Computer Engineering (2017–2021)</div>
+              <p>Conducted Research in computer vision &amp; machine learning; also worked as a teaching assistant.</p>
+            </div>
           </li>
         </ul>
       </section>
 
-      <!-- Corporate Projects -->
-      <section id="corporate-projects">
-        <h2 class="text-2xl font-bold mb-4 border-b pb-2">Corporate R&amp;D Projects</h2>
-        <p class="italic text-gray-500 mb-6">(Can't share too many details as I don't own the work, can only share the general concepts)</p>
+      <!-- Projects Section -->
+      <section id="Projects">
+        <h2 class="text-2xl font-bold mb-6 border-b pb-2">Projects</h2>
         
-        <h3 class="text-xl font-semibold mt-4 mb-3">Custom GenAI Tools</h3>
-        <div class="space-y-4 pl-4 border-l-2 border-gray-200">
-          <div>
-            <strong>Tools to Democratize Text-Mining (2024–2025)</strong>
-            <p class="mt-1">Designed an excel-like system for domain experts to compose custom text-processing pipelines (beyond RAG). Enabled non-technical researchers to search, structure, and synthesize large clinical/technical corpora with reproducible workflows.
-              <a href="corporate_RandD/GenAI_tools.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a>
-            </p>
+        <!-- Corporate R&D Projects -->
+        <div class="mb-10">
+          <h3 class="text-xl font-bold mb-2 text-gray-800">Corporate R&D Projects</h3>
+          <p class="text-sm italic text-gray-500 mb-6">(Can't share too many details as I don't own the work, but I can share the general concepts)</p>
+          
+          <!-- GenAI -->
+          <div class="ml-4 mb-8">
+            <h4 class="text-lg font-semibold mb-3 text-gray-700 border-l-4 border-blue-500 pl-2">GenAI</h4>
+            <div class="space-y-4 pl-4 border-l border-gray-200 ml-1">
+              <div>
+                <strong>Tools to Democratize Text-Mining (2024–2025)</strong>
+                <p class="mt-1">Designed an excel-like system for domain experts to compose custom text-processing pipelines (beyond RAG). Enabled non-technical researchers to search, structure, and synthesize large clinical/technical corpora with reproducible workflows.</p>
+              </div>
+              <div>
+                <strong>Insight Co-Pilot for Large-Scale Text Analytics (2024–2025)</strong>
+                <p class="mt-1">Fused classical data analysis with LLMs to generate and validate insights at scale, standardizing analyses and improving traceability, speed and performance.</p>
+              </div>
+              <a href="corporate_RandD/GenAI_tools.html" class="text-blue-600 hover:underline text-sm inline-block mt-1">Read more →</a>
+            </div>
           </div>
-          <div>
-            <strong>Insight Co-Pilot for Large-Scale Text Analytics (2024–2025)</strong>
-            <p class="mt-1">Fused classical data analysis with LLMs to generate and validate insights at scale, standardizing analyses and improving traceability, speed and performance.
-              <a href="corporate_RandD/GenAI_tools.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a>
-            </p>
+
+          <!-- Skin AI -->
+          <div class="ml-4 mb-8">
+            <h4 class="text-lg font-semibold mb-3 text-gray-700 border-l-4 border-blue-500 pl-2">Skin AI</h4>
+            <div class="space-y-4 pl-4 border-l border-gray-200 ml-1">
+              <div>
+                <strong>Synthetic Skin Imagery for Perception Studies (2023)</strong>
+                <p class="mt-1">Built a controllable generator to produce parameterized exemplars of skin appearance for user research and model training. 
+                    <a href="corporate_RandD/AI_for_skin.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a> 
+                </p>
+              </div>
+              <div>
+                <strong>Perceptual Severity Index for Dermatology (2023)</strong>
+                <p class="mt-1">Co-developed a consistent, condition-agnostic metric for perceived severity in skin imagery to improve agreement with expert ratings.</p>
+              </div>
+              <div>
+                <strong>At-Home Imaging &amp; Calibration Framework (2023)</strong>
+                <p class="mt-1">Mobile capture protocols, calibration, and ROI tracking for consistent, analysis-grade images outside the lab.</p>
+              </div>
+              <div>
+                <strong>Image-Based Treatment-Response Feasibility (2023)</strong>
+                <p class="mt-1">Explored predictive modeling of response to topicals using facial imagery with strict guardrails and bias checks.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Consumer Research -->
+          <div class="ml-4 mb-8">
+            <h4 class="text-lg font-semibold mb-3 text-gray-700 border-l-4 border-blue-500 pl-2">Consumer Research</h4>
+            <div class="space-y-4 pl-4 border-l border-gray-200 ml-1">
+              <div>
+                <strong>iPhone Pro LiDAR Body-Measurement Prototype (2023)</strong>
+                <p class="mt-1">Rapid prototype using on-device sensors for sizing/fit research in infant/baby applications.</p>
+              </div>
+              <div>
+                <strong>Computer Vision Systems to Study Micro-Actions of Consumers (2023)</strong>
+                <p class="mt-1">CV pipeline to quantify fine motor actions and sequences in shaving videos for consumer-use research.</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <h3 class="text-xl font-semibold mt-8 mb-3">CV / ML for Cosmetic Dermatology</h3>
-        <div class="space-y-4 pl-4 border-l-2 border-gray-200">
-          <div>
-            <strong>Synthetic Skin Imagery for Perception Studies (2023)</strong>
-            <p class="mt-1">Built a controllable generator to produce parameterized exemplars of skin appearance for user research and model training. 
-                <a href="corporate_RandD/AI_for_skin.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a> 
-            </p>
+        <!-- Research -->
+        <div>
+          <h3 class="text-xl font-bold mb-6 text-gray-800">Research</h3>
+          
+          <!-- Topology -->
+          <div class="ml-4 mb-8">
+            <h4 class="text-lg font-semibold mb-3 text-gray-700 border-l-4 border-green-500 pl-2">Topology</h4>
+            <div class="pl-4 border-l border-gray-200 ml-1">
+              <strong>Topology of Deep Nets</strong>
+              <p class="mt-1">Proposed a topological characterization of DNN structure; preprint available upon request. <a href="AIresearch/topology_of_deep_networks.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a></p>
+            </div>
           </div>
-          <div>
-            <strong>Perceptual Severity Index for Dermatology (2023)</strong>
-            <p class="mt-1">Co-developed a consistent, condition-agnostic metric for perceived severity in skin imagery to improve agreement with expert ratings.</p>
-          </div>
-          <div>
-            <strong>At-Home Imaging &amp; Calibration Framework (2023)</strong>
-            <p class="mt-1">Mobile capture protocols, calibration, and ROI tracking for consistent, analysis-grade images outside the lab.</p>
-          </div>
-          <div>
-            <strong>Image-Based Treatment-Response Feasibility (2023)</strong>
-            <p class="mt-1">Explored predictive modeling of response to topicals using facial imagery with strict guardrails and bias checks.</p>
-          </div>
-        </div>
 
-        <h3 class="text-xl font-semibold mt-8 mb-3">Computer Vision Systems for Consumer/Product Research</h3>
-        <div class="space-y-4 pl-4 border-l-2 border-gray-200">
-          <div>
-            <strong>iPhone Pro LiDAR Body-Measurement Prototype (2023)</strong>
-            <p class="mt-1">Rapid prototype using on-device sensors for sizing/fit research in infant/baby applications.</p>
-          </div>
-          <div>
-            <strong>Computer Vision Systems to Study Micro-Actions of Consumers (2023)</strong>
-            <p class="mt-1">CV pipeline to quantify fine motor actions and sequences in shaving videos for consumer-use research.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Research Projects -->
-      <section id="research-projects">
-        <h2 class="text-2xl font-bold mb-4 border-b pb-2">Graduate Research</h2>
-        <div class="space-y-4">
-          <div>
-            <strong>Topology of Deep Nets</strong>
-            <p class="mt-1">Proposed a topological characterization of DNN structure; preprint available upon request. <a href="AIresearch/topology_of_deep_networks.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a></p>
-          </div>
-          <div>
-            <strong>Interpreting Intent in Motion</strong>
-            <p class="mt-1">Unsupervised detection of non-intentional vs intentional movement. Published in International Journal of Computer Vision. <a href="AIresearch/intent_ijcv_work.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a></p>
+          <!-- Intent -->
+          <div class="ml-4 mb-8">
+            <h4 class="text-lg font-semibold mb-3 text-gray-700 border-l-4 border-green-500 pl-2">Intent</h4>
+            <div class="pl-4 border-l border-gray-200 ml-1">
+              <strong>Interpreting Intent in Motion</strong>
+              <p class="mt-1">Unsupervised detection of non-intentional vs intentional movement. Published in International Journal of Computer Vision. <a href="AIresearch/intent_ijcv_work.html" class="text-blue-600 hover:underline text-sm ml-1">Read more →</a></p>
+            </div>
           </div>
         </div>
       </section>
