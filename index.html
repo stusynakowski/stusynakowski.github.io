@@ -383,29 +383,44 @@
 
         <!-- Research -->
         <div>
-          <h3 class="text-xl font-bold mb-6 text-gray-800">AI Research Projects</h3>
+          <h3 class="text-xl font-bold mb-6 text-gray-800">AI Research Projects (Graduate Work)</h3>
+
+            <p class="mb-3 text-gray-700">
+                The problem definitions in my PhD work were intentionally broad (I had a mild case of scope creep because the ideas were interesting). In hindsight, several of these projects probably could have been split into multiple papers, but as my advisor liked to say, “don’t slice the salami.” Feel free to check out the work below. I still think the ideas hold up and remain relevant to modern AI systems.
+            </p>
+
+            <h2 class="text-xl font-bold mb-3 text-gray-800">A Recurring Problem in AI: Sharing Knowledge Between Systems</h2>
+              <p class="mb-3 text-gray-700">
+                    A central theme in my research is how AI systems can share knowledge across tasks. Humans are remarkably efficient at learning new tasks from very little data, while modern AI systems often require massive datasets and compute. Work by François Chollet highlights this gap and motivates the need for representations that allow systems to reuse knowledge acquired from prior tasks. While approaches like transfer learning and meta-learning exist, it’s still unclear what knowledge is being shared and how it is represented inside modern models. My PhD work explored concrete ways to represent and leverage shared knowledge in computer vision systems.
+              </p>
+              <a href="AIresearch/thesis.html" class="text-blue-600 hover:underline font-medium inline-flex items-center mt-2">
+                  Read more about my thesis work
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+              </a>
+            </h2>
           
           <!-- Topology -->
           <div class="ml-4 mb-8">
-            <h4 class="text-lg font-semibold mb-3 text-gray-700 border-l-4 border-green-500 pl-2">Machine Learning Research</h4>
+            <h4 class="text-lg font-semibold mb-3 text-gray-700 border-l-4 border-green-500 pl-2">Leveraging the Structure of Deep Neural Networks that Learn</h4>
              <div class="mb-4">
                 <img src="images/Topology_Research_Cover_Photo.png" 
-                     alt="AI for Skin Analysis Overview" 
+                     alt="AI AI for Topology Overview" 
                      class="rounded-lg shadow-md w-full h-auto object-cover border border-gray-100">
               </div>
-            
+
+
+
+
             
             <div class="space-y-4 pl-4 border-l border-gray-200 ml-1">
               <div class="flex items-start space-x-4">
                 
                 <div>
-                  <strong>Understanding the Structure of Deep Neural Networks that Learn | Graduate Research </strong>
-                  <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mt-1">
-                    <li>Desired a framework to understand the structures consistent with learning in Deep Neural Networks (DNNs)</li>
-                    <li>Examined the structure of DNNs using Topological Data Analysis (TDA)</li>
-                    <li>Designed a novel topological characterization of DNNs: <a href="https://arxiv.org/abs/2111.15651" class="text-blue-600 hover:underline">(available on arxiv)</a></li>
-                    <li>Demonstrated its applications in performance estimation, meta-learning, and task-similarity</li>
-                  </ul>
+
+
+                  <p class="mb-3 text-gray-700">
+                      One line of work examines the topological structure of deep networks. Certain topological properties of learned representations correlate strongly with generalization performance, independent of model architecture or task. I developed fast, differentiable proxies for these properties, enabling early stopping, task similarity estimation, and topological constraints on learning.
+                  </p>
                 </div>
               </div>
             </div>
@@ -426,13 +441,8 @@
               <div class="flex items-start space-x-4">
 
                 <div>
-                  <strong>Higher-Level Action Analysis Research | Graduate Research</strong>
-                  <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mt-1">
-                    <li>Desired an interpretable method to infer between intentional and non-intentional movement in videos</li>
-                    <li>Developed an unsupervised algorithm to detect non-intentional movement in videos using common knowledge</li>
-                    <li>Demonstrated algorithm can be applied to any agent, ranging from cartoons to humans</li>
-                    <li>Published work in <a href="https://link.springer.com/article/10.1007/s11263-020-01404-0" class="text-blue-600 hover:underline">The International Journal of Computer Vision</a>, algorithm is now public (see github)</li>
-                  </ul>
+                  A second line of work focuses on intent recognition. Humans readily infer intention even in abstract settings (e.g., simple moving shapes). By identifying first-principles cues like self-propelled motion, I built systems that infer intent in simplified scenes and generalize the same inference rules to motion capture data and real-world video. This work was published in International Journal of Computer Vision.
+
                 </div>
               </div>
             </div>

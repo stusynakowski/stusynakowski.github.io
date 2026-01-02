@@ -10,13 +10,73 @@
   <header class="p-6 bg-gray-100 shadow-md">
     <div class="max-w-4xl mx-auto">
       <a href="../index.html" class="text-sm text-blue-600 hover:underline">&larr; Back</a>
-      <h1 class="text-3xl font-bold mt-2">PhD Thesis - placeholder</h1>
+      <h1 class="text-3xl font-bold mt-2">AI Research (Graduate Work)</h1>
     </div>
   </header>
 
   <main class="max-w-4xl mx-auto p-6">
-    <p class="mb-4">Summary of the thesis, links to preprints, slides, code and selected figures. Add any downloadable artifacts (PDF, slides) under a protected area if needed.</p>
-    <a href="../assets/thesis.pdf" class="text-blue-600 hover:underline">Download thesis (PDF)</a>
+
+    <p class="mb-4">Below is an overview of my PhD research. To be frank, I was a mediocre graduate student compared to my brilliant labmates and advisor. I learned so much, and I am a far more capable innovator because of it. Shoutout to my advisor, Aleix Martinez https://scholar.google.com/citations?user=9uNzG-sAAAAJ&hl=en, for taking me on and refining my ability to think deeply about problems. He’s one of the OGs in affective computing, now at Amazon. He deserves credit not only for being a genius, and being exceptionally hard working, but for also being patient with me. He consistently pushed for research problems where contributions stood the test of time and has forever changed the way I approached problems. Only needed to cry in the lab A COUPLE TIMES (Which isn’t bad for any PhD in STEM), But a little-known fact is that graduate student tears can, in fact, cure cancer. </p>
+
+    <p class="mb-4">The problem definitions in my PhD work were intentionally broad (and yes, I had a bit of an issue with scope creep because the ideas were interesting). In hindsight, several of these projects probably should have been split into multiple papers, but as my advisor liked to say: “don’t slice the salami” — referring to researchers inflating their h-index by breaking ideas into the smallest publishable units.</p>
+    <p class="mb-4">Anyway, feel free to check out the work below. I still find it interesting, and the concepts and contributions remain relevant to modern AI systems.</p>
+
+    <h3 class="text-xl font-bold mb-2 mt-8">A Recurring Problem in AI: Sharing Knowledge Between Systems</h3>
+    <p class="mb-4">A recurring theme across my research is the problem of how knowledge is shared between systems and tasks.</p>
+    <p class="mb-4">There’s a long-standing phenomenon in AI known as the AI Effect: once a machine can do something well, critics tend to argue that the task was never “real intelligence” to begin with. Even today, despite state-of-the-art systems passing the Turing Test and performing undeniably useful work, many argue that modern foundation models are “just” large-scale token predictors compressing the internet into a transformer.</p>
+    <p class="mb-4">So the obvious question becomes:</p>
+    <blockquote class="border-l-4 border-gray-300 pl-4 italic mb-4">what actually distinguishes human cognition from modern AI systems?</blockquote>
+
+    <h3 class="text-xl font-bold mb-2 mt-8">Learning Efficiency and Shared Knowledge</h3>
+    <p class="mb-4">One compelling answer, articulated clearly by François Chollet, is efficiency.</p>
+    <p class="mb-4">Humans learn new tasks from remarkably few examples, despite not being trained on anything close to the scale of data used for modern foundation models. With relatively little exposure, humans can often reach performance comparable to state-of-the-art AI systems given enough time.</p>
+    <p class="mb-4">The implication is that intelligent systems should:</p>
+    <ul class="list-disc list-inside mb-4">
+        <li>Learn new tasks with less data</li>
+        <li>Reuse knowledge acquired from prior tasks</li>
+        <li>Be efficient with both compute and supervision</li>
+    </ul>
+    <p class="mb-4">This naturally leads to the idea of shared knowledge: information that is useful across multiple tasks. While fields like transfer learning, fine-tuning, meta-learning, and zero-shot learning attempt to address this, the representation of knowledge itself remains poorly understood. Even basic questions are unclear:</p>
+    <ul class="list-disc list-inside mb-4">
+        <li>Does a weight matrix correspond to task A, task B, both, or neither?</li>
+        <li>How do we isolate knowledge that generalizes versus knowledge that is task-specific?</li>
+    </ul>
+    <p class="mb-4">My PhD work explored two concrete strategies for representing and leveraging shared knowledge in computer vision systems.</p>
+
+    <h3 class="text-xl font-bold mb-2 mt-8">Leveraging Topological Consistencies in Learning</h3>
+    <p class="mb-4">One branch of my work focuses on the structure of deep networks themselves.</p>
+    <p class="mb-4">A fascinating observation is that the generalization performance of a model can be estimated by examining certain topological properties of the representations it learns. In my thesis and related work, I formalize what I mean by “topological structure” — loosely, properties of representations that are invariant under smooth transformations (homeomorphisms), but not under transformations that fundamentally alter the space.</p>
+    <p class="mb-4">Surprisingly, these topological characterizations correlate strongly with test performance across:</p>
+    <ul class="list-disc list-inside mb-4">
+        <li>Different tasks</li>
+        <li>Different architectures</li>
+        <li>Different datasets</li>
+    </ul>
+    <p class="mb-4">This aligns with related work by my friend Ciprian (see link below), though computing full topological descriptors can be expensive.</p>
+    <p class="mb-4">To make this practical, I developed fast, differentiable proxies for these topological properties. These enable things like:</p>
+    <ul class="list-disc list-inside mb-4">
+        <li>Effective early stopping criteria</li>
+        <li>Estimating task similarity between trained models</li>
+        <li>Selecting the best model to fine-tune for a new task</li>
+        <li>Constraining models to learn representations consistent with generalization (think: topological meta-learning)</li>
+    </ul>
+    <p class="mb-4">I’m mildly ashamed this work didn’t make it into a journal. By the time I received a reject-and-resubmit from IEEE TPAMI, I had already accepted an industry role. The upside is that the ideas are still relevant — arguably more so today — and I plan to revisit them using modern architectures like transformers.</p>
+
+    <h3 class="text-xl font-bold mb-2 mt-8">Sharing Knowledge to Recognize Intent</h3>
+    <p class="mb-4">Another line of work tackled a classic “higher-level” vision problem: inferring intent.</p>
+    <p class="mb-4">Humans are remarkably good at attributing intention, even in abstract settings. A famous example from psychology is the Heider–Simmel experiment (1948), where people consistently describe narratives involving intention and agency when shown simple shapes moving around a screen.</p>
+    <p class="mb-4">Most data-driven vision systems struggle with this, especially when asked to generalize to agents or behaviors they’ve never seen before.</p>
+    <p class="mb-4">Our hypothesis was simple:</p>
+    <blockquote class="border-l-4 border-gray-300 pl-4 italic mb-4">If we can identify the minimal, abstract knowledge required to infer intent, that knowledge should generalize across domains.</blockquote>
+    <p class="mb-4">A key distinction we exploited was self-propelled motion versus motion explained by external forces. If motion cannot be explained by external forces, humans tend to perceive it as intentional.</p>
+    <p class="mb-4">Using this idea, I derived a small set of first-principles rules to classify intentional versus non-intentional motion in simplified scenes inspired by Heider–Simmel stimuli. Once validated, we applied the same algorithm — unchanged — to:</p>
+    <ul class="list-disc list-inside mb-4">
+        <li>Motion capture data</li>
+        <li>Real-world video</li>
+        <li>Everyday “fail” videos</li>
+    </ul>
+    <p class="mb-4">The only difference across domains was the preprocessing needed to estimate the physics of the scene. The inference mechanism itself remained identical.</p>
+    <p class="mb-4">This work was ultimately published in International Journal of Computer Vision (IJCV).</p>
   </main>
 
   <footer class="p-6 text-center text-gray-500">
