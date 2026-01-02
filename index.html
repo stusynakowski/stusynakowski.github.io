@@ -389,14 +389,17 @@
                 The problem definitions in my PhD work were intentionally broad (I had a mild case of scope creep because the ideas were interesting). In hindsight, several of these projects probably could have been split into multiple papers, but as my advisor liked to say, “don’t slice the salami.” Feel free to check out the work below. I still think the ideas hold up and remain relevant to modern AI systems.
             </p>
 
+                <a href="AIresearch/thesis.html" class="text-blue-600 hover:underline font-medium inline-flex items-center mt-2">
+                  Here is a More detailed Overview of My PhD Thesis
+                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+
+
             <h2 class="text-xl font-bold mb-3 text-gray-800">A Recurring Problem in AI: Sharing Knowledge Between Systems</h2>
               <p class="mb-3 text-gray-700">
                     A central theme in my research is how AI systems can share knowledge across tasks. Humans are remarkably efficient at learning new tasks from very little data, while modern AI systems often require massive datasets and compute. Work by François Chollet highlights this gap and motivates the need for representations that allow systems to reuse knowledge acquired from prior tasks. While approaches like transfer learning and meta-learning exist, it’s still unclear what knowledge is being shared and how it is represented inside modern models. My PhD work explored concrete ways to represent and leverage shared knowledge in computer vision systems.
               </p>
-              <a href="AIresearch/thesis.html" class="text-blue-600 hover:underline font-medium inline-flex items-center mt-2">
-                  Read more about my thesis work
-                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-              </a>
+
             </h2>
           
           <!-- Topology -->
@@ -420,7 +423,16 @@
 
                   <p class="mb-3 text-gray-700">
                       One line of work examines the topological structure of deep networks. Certain topological properties of learned representations correlate strongly with generalization performance, independent of model architecture or task. I developed fast, differentiable proxies for these properties, enabling early stopping, task similarity estimation, and topological constraints on learning.
+                  
+                      <a href="https://arxiv.org/abs/2111.15651" class="text-blue-600 hover:underline font-medium inline-flex items-center mt-2">
+                         Feel free to check it out on Arxiv
+                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                      </a>
+                  
                   </p>
+
+
+
                 </div>
               </div>
             </div>
@@ -443,6 +455,11 @@
                 <div>
                   A second line of work focuses on intent recognition. Humans readily infer intention even in abstract settings (e.g., simple moving shapes). By identifying first-principles cues like self-propelled motion, I built systems that infer intent in simplified scenes and generalize the same inference rules to motion capture data and real-world video. This work was published in International Journal of Computer Vision.
 
+                        <a href="https://link.springer.com/article/10.1007/s11263-020-01404-0" class="text-blue-600 hover:underline font-medium inline-flex items-center mt-2">
+                         You should be able to download it for free here
+                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                      </a>
+
                 </div>
               </div>
             </div>
@@ -453,6 +470,10 @@
         <div class="mt-10">
           <h3 class="text-xl font-bold mb-6 text-gray-800">Physics Projects</h3>
 
+          <p class="mb-3 text-gray-700"> Before moving fully into AI and engineering, I originally planned to pursue a PhD in physics. As an undergraduate, I had the chance to work on several computational physics projects that strongly shaped how I think about modeling, first principles, and simulation.
+          </p> 
+
+            
             <div class="mb-4">
                 <img src="images/Physics_Research_Photo1.png" 
                      alt="AI for Skin Analysis Overview" 
@@ -464,13 +485,24 @@
             <h4 class="text-lg font-semibold mb-3 text-gray-700 border-l-4 border-purple-500 pl-2">Computational Models of Crystal Structures</h4>
             <div class="pl-4 border-l border-gray-200 ml-1">
               <div class="text-sm text-gray-600 mb-2">NSF Physics REU Lehigh University 2016</div>
-              <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                <li>Wanted to simulate DNA coated particles which can aggregate to form various crystal structures</li>
-                <li>Wrote scripts in python and bash to model particle interactions in a computationally inexpensive manner</li>
-                <li>Showed particular DNA configurations change the melting temperature of crystal structures</li>
-                <li>Became proficient in python and bash to simulate particle interactions using XSEDE supercomputers</li>
-              </ul>
+
+            <p class="mb-3 text-gray-700">
+              One fascinating idea in materials science is that you can “program” how particles interact by coating them with specific DNA strands. By choosing the DNA sequences, you can effectively design the interaction rules and induce different crystal lattice structures.
+            </p>
+            <p class="mb-3 text-gray-700">
+              I worked on computational models that approximated the pair potentials between DNA-coated particles (loosely inspired by modified Lennard–Jones–potential particle interactions). Using lightweight simulations, we explored how different DNA encodings influenced lattice properties, including sensitivity to temperature and melting behavior.
+            </p>
+            <p class="mb-3 text-gray-700">
+              This project was my first real exposure to large-scale scientific computing — writing Python and bash scripts, running simulations on XSEDE supercomputers, and thinking carefully about how to balance physical fidelity with computational efficiency.I built computational models to simulate how these DNA-coated particles self-assemble into different crystal structures. The simulations helped validate theoretical predictions and provided insights into the dynamics of the assembly process.
+            </p>
+
             </div>
+          
+            <a href="https://jeetain.wixsite.com/mittal-lab/people" class="text-blue-600 hover:underline font-medium inline-flex items-center mt-2">
+                Feel free to checkout Jeetain Mittal's research group (Moved to Texas) 
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+          
           </div>
 
           <!-- Nanopore Sensors -->
@@ -478,13 +510,22 @@
             <h4 class="text-lg font-semibold mb-3 text-gray-700 border-l-4 border-purple-500 pl-2">Computational Models of Dielectrics in Nanopore Sensors</h4>
             <div class="pl-4 border-l border-gray-200 ml-1">
               <div class="text-sm text-gray-600 mb-2">Physics REU Clarkson University 2015</div>
-              <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                <li>Desired a model of ionic current blockage of cylindrical nanopores due to nanoparticles.</li>
-                <li>Constructed Models in COMSOL Multiphysics, a finite element solver to simulate ionic current flow</li>
-                <li>Further developed analytical models to describing current flow in nanopore systems blocked by dielectric materials</li>
-                <li>Described ionic current flow as a function of particle geometry, which has applications including DNA sequencing and filtering</li>
-              </ul>
+
+              <p class="mb-3 text-gray-700"> Nanopores show a lot of promise for applications like particle filtering and DNA sequencing, where information is inferred from changes in ionic current as particles pass through a pore.
+              </p>
+              <p class="mb-3 text-gray-700">I worked on modeling ionic current flow through cylindrical nanopores partially blocked by dielectric nanoparticles. Using COMSOL Multiphysics (and some Fortran-based simulations), we built finite-element and analytical models to describe how current blockage depends on particle geometry and material properties.
+              </p>
+              <p class="mb-3 text-gray-700">The goal was to better understand how physical characteristics of particles could be inferred from electrical signals — a theme that, in hindsight, connects pretty directly to many inverse problems I still find interesting today.
+              </p>
+
+
             </div>
+
+            <a href="https://people.clarkson.edu/~mgrachev/research.html" class="text-blue-600 hover:underline font-medium inline-flex items-center mt-2">
+                Feel free to checkout Maria Gracheva's research group
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+
           </div>
         </div>
       </section>
